@@ -17,7 +17,7 @@ nightscout:
   image: 'nightscout/cgm-remote-monitor-development:latest'
   environment:
     - API_SECRET=maddymaddy2019
-    - 'MONGO_CONNECTION=mongodb://admin:{{** CHANGE ME **}}@database/admin'
+    - 'MONGO_CONNECTION=mongodb://admin:maddymaddy2019@database/admin'
     - 'MQTT_MONITOR=mqtt://maddymaddy2019@broker'
     - PORT=1337
   links:
