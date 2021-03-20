@@ -5,7 +5,7 @@ broker:
 database:
   image: 'tutum/mongodb:latest'
   environment:
-    - MONGODB_PASS={{** CHANGE ME **}}
+    - MONGODB_PASS=maddymaddy2019
 
 # Uncomment if you want to expose the MongoDB port directly
 # If you're using the API interface (highly recommended) then you can 
@@ -16,9 +16,9 @@ database:
 nightscout:
   image: 'nightscout/cgm-remote-monitor-development:latest'
   environment:
-    - API_SECRET={{** CHANGE ME **}}
+    - API_SECRET=maddymaddy2019
     - 'MONGO_CONNECTION=mongodb://admin:{{** CHANGE ME **}}@database/admin'
-    - 'MQTT_MONITOR=mqtt://{{** CHANGE ME **}}@broker'
+    - 'MQTT_MONITOR=mqtt://maddymaddy2019@broker'
     - PORT=1337
   links:
     - broker
