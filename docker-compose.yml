@@ -14,7 +14,8 @@ database:
 #    - '27017:27017'
 
 nightscout:
-  image: 'nightscout/cgm-remote-monitor-development:latest'
+  #image: 'nightscout/cgm-remote-monitor-development:latest'
+  image: 'nightscout/cgm-remote-monitor:latest'
   environment:
     - API_SECRET=maddymaddy2019
     - 'MONGO_CONNECTION=mongodb://admin:maddymaddy2019@database/admin'
